@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post">
+			姓名：<input name="username" value="Anna"/> <br />
+			密码：<input  type="password" name="password" value="123"/> <br />
+			性别： <input type="radio" name="sex" value="men" checked=“checked”/>男
+			      <input type="radio" name="sex" value="women"/>女   
+			      <br />
+			头像： <input type="file" name="photo"/>
+			      <br />
+			爱好： <input type="checkbox" name="hobby" value="eat"/>吃
+			      <input type="checkbox" name="hobby" value="play" checked=“checked”/>玩
+			      <input type="checkbox" name="hobby" value="sleep"/>睡
+			      <br />
+			籍贯: <select name="pro">
+				    <option value="01">黑龙江</option>
+				    <option value="02">福建</option>
+				    <option value="03" selected="selected">山西</option>
+				    <option value="04">浙江</option>
+				    <option value="05">湖南</option>
+			      </select>
+			      <select name="city">
+			      	<option>请选择</option>
+				    <option value="0110">哈尔滨</option>
+				    <option value="0220">厦门</option>
+				    <option value="0230">运城</option>
+				    <option value="0440">杭州</option>
+				    <option value="0550">长沙</option>
+			      </select>
+			      <br />
+			自我介绍： <textarea name="introduce" cols="40" rows="4">开始输入····</textarea>
+			          <br />
+			<input type="submit" value="保存" />
+			<input type="reset" />
+			<input type="button" value="普通按钮"/>
+		</form>
+	</body>
+</html>
+
+
+<!--
+表单标签★★★
+	<form></form> 
+	作用:
+		用来从浏览器端收集用户的信息.
+	
+	常用属性：
+		action:信息提交的路径默认是当前页面 
+		method:表达提交方式（共7种）
+			get（默认）和 post
+			get把所有参数追加在地址栏，post不会
+			get请求参数有大小限制，post不会
+			post相对安全
+
+	常见子标签：
+		input
+		select:下拉选
+		textarea:文本域
+	input标签
+		常用属性：
+			type:
+				text:文本框默认
+				password:密码框
+				radio：单选框
+				checbox：多选框
+				file：文件框
+				
+				submit:提交
+				reset:重置
+				button:普通按钮
+				
+				hidden:隐藏域  在页面上不显示，但会提交
+				image:图片提交 替代submit
+			name：
+				将几个单选框（复选框）设为一组
+				保存信息到服务器
+			readonly:
+				readonly = "readonly"只读
+			disabled:
+				 disabled = "disabled"禁用
+	select标签
+		格式：
+			<select name="xxx">
+				  <option>XXX</option>
+			</select>
+	textarea:
+		常用属性：
+			cols：列
+			row：行
+			
+	提交到服务器的内容的格式： 
+		key=value&
+	对于文本框、密码域、文本域等 ，传递手写内容
+	对于选择框，没有传输
+		传值必须设置value属性
+	对于下拉选select，也要加上value属性
+	
+	默认值：
+		对于文本框、密码域：添加value属性即可
+		单选框多选框：添加 checked=“checked”
+		下拉选：添加selected="selected"
+		文本域：标签体
+-->
