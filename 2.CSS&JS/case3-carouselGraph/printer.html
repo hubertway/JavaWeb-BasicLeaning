@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var s="白洞，白色的明天等着我们！";
+			var i=0;
+			var divObj;
+			function init(){
+				divObj = document.getElementById("divId");
+				setInterval(show,200);
+			}
+			
+			function show(){
+				i++;
+				var s_=s.substr(0,i);
+				divObj.innerHTML=s_;
+				if(i==s.length)i=0;
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<div id="divId">
+		</div>
+	</body>
+</html>
+
+<!--
+定时器:
+	var id=setInterVal(code,毫秒数):每隔指定的毫秒数执行一次函数 周期
+	var id=setTimeout(code,毫秒数):延迟指定的毫秒数之后 只执行一次函数
+	
+	清除定时器:
+		clearInterval(id);
+		claerTimeout(id);
+-->
