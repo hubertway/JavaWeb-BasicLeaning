@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#divId2{
+				background-color: #0f0;
+				width: 50%;
+			}
+		</style>
+		<link rel="stylesheet" href="css/1.css" type="text/css" />
+	</head>
+	<body>
+		<div>hello~~!</div>
+		<div style="background-color: #ff0000;">hello~~!-内联样式表</div>
+		<div id="divId2">hi~!-内部样式表</div>
+		<div id="divId3">你好~!-外部样式表</div>
+	</body>
+</html>
+
+<!--
+和html元素的整合★
+		方式1:内联样式表 通过标签的style属性设置样式
+		方式2:内部样式表 在当前页面中使用的样式
+			通过head标签的style子标签导入
+			例如:
+				<style>
+					#divId2{
+						background-color: #0f0;
+					}
+				</style>
+				
+		方式3:外部样式表 有独立的css文件
+			通过head标签的link子标签导入
+			例如:
+				<link rel="stylesheet" href="css/1.css" type="text/css"/>
+-->
