@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#divId1{
+				background-color: #f00;
+			}
+			.divCls1{
+				background-color: #0f0;
+			}
+			span{
+				background-color: #00f;
+			}
+			span[att="val"]{
+				background-color: #0ff;
+			}
+		</style>
+	</head>
+	<body>
+		<div>Hi!~</div>
+		<div id="divId1">Hi!~-id选择器</div>
+		<div class="divCls1">Hi!~-class选择器</div>
+		<span>Hi!~</span>
+		<span att="val">Hi!~</span>
+		<span>Hi!~</span>
+	</body>
+</html>
+
+<!--
+选择器:★
+		id选择器
+			要求:
+				html元素必须有id属性且有值   <xxx id="id1"></xxx>
+				css中通过"#"引入,后面加上id的值  #id1{...}
+		class选择器
+			要求:
+				html元素必须有class属性且有值 <xxx class="cls1"/>
+				css中通过"."引入,后面加上class的值  .cls1{...}
+		元素选择器
+			直接用元素(标签)名即可   xxx{...}
+		
+	派生的选择器
+		属性选择器★
+			要求:
+				html元素必须有一个属性不论属性是什么且有值  <xxx nihao="wohenhao"/>
+				css中通过下面的方式使用
+					元素名[属性="属性值"]{....}
+					例如:
+						xxx[nihao="wohenhao"]{....}
+	后代选择器
+			选择器 后代选择器{...}   在满足第一个选择器的条件下找后代的选择器,给满足条件的元素添加样式
+
+	
+	选择器使用小结:
+		id选择器:一个元素(标签)
+		class选择器:一类元素  
+		元素选择器:一种元素
+		属性选择器:元素选择器的特殊用法
+	使用的时候注意:(了解)
+		若多个样式作用于一个元素的时候
+			不同的样式,会叠加
+			相同的样式,最近原则
+		若多个选择器作用于一个元素的时候
+			越特殊优先级越高 id优先级最高
+-->
