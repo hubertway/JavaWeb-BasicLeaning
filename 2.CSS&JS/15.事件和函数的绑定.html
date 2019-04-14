@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function btnCli(){
+				alert(44944);
+			}
+			function init(){
+				alert("页面加载成功");
+			}
+			var btn2cli = function(){
+				alert("12323546");
+			}
+			
+		</script>
+	</head>
+	<body onload="init()">
+		<input type="button" value="来点击试试" onclick="btnCli()"/>
+		<input type="button" value="来点击试试2" id="btn2"/>
+	</body>
+	<script>
+		document.getElementById("btn2").onclick=btn2cli;
+	</script>
+</html>
+ 
+<!--
+js事件和函数的绑定:
+	方式1:
+		通过标签的事件属性   <xxx onclick="函数名(参数)"></xxx>
+	方式2:
+		给元素派发事件
+			document.getElementById("id值").onclick=function(参数){....}
+			document.getElementById("id值").onclick=函数名
+		注意:
+			内存中应该存在该元素才可以派发事件
+		a.将方式2的js代码放在html页面的最下面
+		b.在页面加载成功之后在运行方式2的js代码  onload事件.
+
+-->
