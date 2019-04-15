@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		用户名：<input name = "" value="tom" id="username" onfocus="getFocus()"  onblur="loseFocus()"/>
+		<span id="spanid"></span>
+	</body>
+	<script>
+		//得到焦点
+		function getFocus(){
+			var user = document.getElementById("username");
+			//给span填写内容文本框的内容
+			document.getElementById("spanid").innerHTML = user.value;
+		}
+		//失去焦点
+		function loseFocus(){
+			var user = document.getElementById("username");
+			alert(user);
+		}
+	</script>
+</html>
+
+<!<!--
+	确定事件 表单提交的时候 onsubmit
+			文本框失去焦点的时候 onblur
+	编写函数
+	获取元素
+		document.getElementById("id值");
+	操作元素(获取元素的值,操作标签体,操作标签value属性)
+-->>
