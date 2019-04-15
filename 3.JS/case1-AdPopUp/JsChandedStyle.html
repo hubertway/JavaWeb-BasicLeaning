@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+		function btnCli(){
+			//点击按钮后，给id为divido元素添加边框 背景色 宽高
+			var obj= document.getElementById("divid0");
+			obj.style.backgroundColor="#ff0";
+			obj.style.border="1px solid red";
+			obj.style.width="100px";
+			obj.style.height="100px"
+			
+		}
+	</script>
+	<body>
+		<input type="button" value="将div加上样式" onclick="btnCli()" />
+		<div id="divid0"></div>
+	</body>
+</html>
+
+<!--
+	操作元素:
+		document.getElementById("")
+	操作css属性
+		document.getElementById("id").style.属性="值"
+		属性:就是css中属性 css属性有"-" 例如:backgroud-color
+			若有"-" 只需要将"-"删除,后面第一个字母变大写即可
+
+-->
