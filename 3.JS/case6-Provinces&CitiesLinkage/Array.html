@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var arr1 = new Array();
+			var arr2 = new Array(3);
+			var arr3 = new Array(3,2,1);
+			var arr4 = ["asd","qwe"];
+			arr4[3] = "hefa";
+			arr4[5] = 23;
+			arr4[8] = "jfgbf";
+//			alert(arr4);
+			arr3.unshift(true);
+//			alert(arr4.join("-"));
+			alert(arr3.sort());
+			alert(arr3.reverse());
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
+
+<!-- 
+	语法:
+		new Array();//长度为0
+		new Array(size);//指定长度的
+		new Array(e1,e2..);//指定元素
+		非官方
+			var arr4=["aa","bb"];
+	常用属性:
+		length
+	注意:
+		数组是可变的
+		数组可以存放任意值
+	常用方法:(了解)
+		存放值:对内容的操作
+			pop():弹	最后一个
+			push():插入 到最后
+			
+			shift():删除第一个
+			unshift():插入到首位
+		打印数组:
+			join(分隔符):将数组里的元素按照指定的分隔符打印
+		拼接数组:
+			concat():连接两个或更多的数组，并返回结果。
+		对结构的操作:
+			sort();排序
+			reverse();反转	
+-->
