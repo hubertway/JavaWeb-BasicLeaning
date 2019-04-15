@@ -1,0 +1,66 @@
+引用类型总结:
+	原始类型中的String Number Boolean都是伪对象,可以调用相应的方法
+	Array:数组
+	String:
+		语法:
+			new String(值|变量);//返回一个对象
+			String(值|变量);//返回原始类型
+		常用方法:
+			substring(start,end):[start,end)
+			substr(start,size):从索引为指定的值开始向后截取几个
+			
+			charAt(index):返回在指定位置的字符。
+			indexOf(""):返回字符串所在索引
+			
+			replace():替换
+			split():切割
+			
+		常用属性:length	
+	Boolean:
+		语法:
+			new Boolean(值|变量);
+			Boolean(值|变量);
+			非0数字 非空字符串 非空对象 转成true
+	Number
+		语法:
+			new Number(值|变量);
+			Number(值|变量);
+		注意:
+		
+			null====>0 
+			fale====>0 true====>1
+			字符串的数字=====>对应的数字
+			其他的NaN
+	Date:
+		new Date();
+		常用方法:
+			toLocalString()
+	RegExp:正则表达式
+		语法:
+			直接量语法  /正则表达式/参数
+			直接量语法  /正则表达式/
+			
+			new RegExp("正则表达式")
+			new RegExp("正则表达式","参数") 
+			参数:
+				i:忽略大小写
+				g:全局
+			常用方法:
+				test() :返回值为boolean
+	Math:
+		Math.常量|方法
+		Math.PI
+		Math.random()  [0,1)
+		
+	全局:
+		★
+		decodeURI() 解码某个编码的 URI。 
+		encodeURI() 把字符串编码为 URI。
+
+		Number():强制转换成数字
+		String():转成字符串
+		
+		parseInt():尝试转换成整数
+		parseFloat():尝试转换成小数
+		
+		eval() 计算 JavaScript 字符串，并把它作为脚本代码来执行。
