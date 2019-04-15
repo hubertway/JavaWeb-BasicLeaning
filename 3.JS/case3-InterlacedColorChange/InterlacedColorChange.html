@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//页面加载成功
+			onload = function(){
+				//获取所有tr
+				var arr = document.getElementsByTagName("tr");
+				
+				//根据奇数偶数，添加不同样式
+				for(var i = 1;i<arr.length;i++){
+					if(i%2==0){
+						arr[i].style.backgroundColor="#ffffcc";
+					}else{
+						arr[i].style.backgroundColor="#bcd68d";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<table id="tab1" border="1" width="800" align="center" >
+			
+			<tr style="background-color: #999999;">
+				<th>分类ID</th>
+				<th>分类名称</th>
+				<th>分类描述</th>
+				<th>操作</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>手机数码</td>
+				<td>手机数码类商品</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>电脑办公</td>
+				<td>电脑办公类商品</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>鞋靴箱包</td>
+				<td>鞋靴箱包类商品</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>家居饰品</td>
+				<td>家居饰品类商品</td>
+				<td><a href="">修改</a>|<a href="">删除</a></td>
+			</tr>
+		</table>
+	</body>
+</html>
+
+<!--
+获取元素:dom操作
+	document.getElementById("id"):通过id获取一个元素
+	document.getElementsByTagName("标签名"):通过标签名获取一种元素(多个)返回
+Array:
+	常用属性:
+		length:数组的长度
+-->
