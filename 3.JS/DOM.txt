@@ -1,0 +1,29 @@
+dom(文档对象模型)
+	当浏览器接受到html代码的时候,浏览器会将所有的代码装载到内存中,形成一棵树(document树)
+	节点(Node)
+		文档节点 document
+		元素节点 element
+		属性节点 attribute
+		文本节点 text
+	获取节点:
+		通过document可以获取其他节点:
+			常用方法:
+				document.getElementById("id值"):获取一个特定的元素
+				document.getElementsByTagName("标签名"):通过标签名获取一种元素(多个)
+				document.getElementsByClassName("class属性的值"):通过class属性获取一类元素(多个)
+				document.getElementsByName("name属性的值"):通过name属性获取一类元素(多个)
+		设置获取获取节点的value属性
+			dom对象.value;获取
+			dom对象.value="";设置
+		设置或者获取节点的标签体
+			dom对象.innerHTML;获取
+			dom对象.innerHTML="";设置
+		获取或者设置style属性
+			dom对象.style.属性;获取
+			dom对象.style.属性="";设置
+		获取或者设置属性
+			dom对象.属性
+对于htmldom的操作若在js或者htmldom 查找不到 去查找xml dom
+	关于文档的操作 在 xml dom 的document中
+	关于元素的操作 在 xml dom 的element中
+		appendChild(dom对象):在一个元素下添加孩子
