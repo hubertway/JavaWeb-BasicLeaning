@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		我是b页面<br/>
+		<input type="button" value="back" onclick="goBack()" />
+	</body>
+	<script>
+		function goBack(){
+			window.history.go(-1);
+		}
+	</script>
+</html>
+
+<!--
+history:历史
+	back();后退
+	forward():向前
+	★go(int)
+		go(-1) 相当于 back()
+		go(1) 相当于 forward()
+-->
