@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+	<style type="text/css">
+		
+		div{
+			border:1px solid #000;
+			width:100px;
+			height:100px;
+		}
+	</style>
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#b1").click(function(){
+				$("#b1Div").toggle(1000);
+				//$("#b1Div").hide(1000);
+				//$("#b1Div").show(1000);
+			});
+			$("#b2").click(function(){
+				$("#b2Div").slideToggle(1000);
+			});
+			$("#b3").click(function(){
+				$("#b3Div").fadeToggle(1000);
+			})
+		})
+		
+	</script>
+</head>
+<body>
+	<input type="button" id="b1" value="显示/隐藏 b1Div" />
+	<div id="b1Div"></div> <br/>
+	<input type="button" id="b2" value="滑出/滑入b2Div"/>
+	<div id="b2Div"></div> <br/>
+	<input type="button" id="b3" value="淡出/淡入b3Div" />
+	<div id="b3Div"></div>
+		
+</body>
+</html>
+
+<!--
+jquery中效果:
+	隐藏或展示
+		show(毫秒数) hide(毫秒数)
+	滑入或滑出
+		slideDown(毫秒数):向下滑入
+		slideUp(毫秒数):向上滑出
+	淡入或淡出
+		fadeIn(int):淡入
+		fadeOut(int):淡出
+-->
