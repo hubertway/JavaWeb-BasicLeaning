@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//派发事件
+				$("#bId").click(function(){
+					alert(123);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="button" id="bId" value="点击查看" />
+	</body>
+</html>
+
+<!--
+派发事件:
+	$("选择器").click(function(){...});
+	等价于 原生js中
+		dom对象.onclick=function(){....}
+	掌握事件:
+		focus
+		blur
+		submit
+		change
+		click
+-->
