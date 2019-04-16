@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			onload=function(){
+				alert(12);
+			}
+			
+			$(function(){
+				alert(34);
+			})
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+
+<!--
+页面加载:
+	js:
+		window.onload=function(){}//在一个页面中只能使用一次
+	jquery 在一个页面中可以使用多次
+		方式1:
+			$(function(){...})
+		方式2:
+			$(document).ready(function(){});
+-->
