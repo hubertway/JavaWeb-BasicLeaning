@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<body>
+	<input type="text" id="username" value="jack"/>
+</body>
+<script>
+	//获取方式：
+	//原生js
+	alert(getElementById("username").value);
+	
+	//jQuery
+	var $username = $("#username");
+	// var $username = jQuery("#username");
+	alert($username.val());
+</script>
+</html>
+
+<!--
+jquery和html的整合
+	jquery是单独的js文件
+		通过script标签的src属性导入即可
+获取一个jquery对象
+	$("选择器")  或者 jQuery("选择器")
+-->
