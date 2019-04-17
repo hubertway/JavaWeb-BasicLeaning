@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$('.carousel').carousel({
+  					interval: 2000
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<!--logo部分-->
+				<div class="col-md-4 col-sm-6 col-xs-6" >
+					<img src="img/logo2.gif" />
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6" >
+					<img src="img/header.jpg" />
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-6" >
+					<ul class="list-inline">
+						<li style="padding-top: 20px"><a href="#">登陆</a></li>
+						<li><a href="#">注册</a></li>
+						<li><a href="#">购物车</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<div class="row">
+				<!--导航条-->
+				<nav class="navbar navbar-inverse">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">首页</a>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">手机 <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">电脑</a></li>
+				        <li><a href="#">数码配件</a></li>
+				        <li><a href="#">家居百货</a></li>
+				        <li><a href="#">蔬果生鲜</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#"></a></li>
+				            <li><a href="#">图书音影</a></li>
+				            <li><a href="#">鞋帽箱包</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">男装</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">女装</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="navbar-form navbar-left pull-right">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="输入内容">
+				        </div>
+				        <button type="submit" class="btn btn-default">搜索</button>
+				      </form>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+			
+			<div class="row">
+				<!--轮播图-->
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+			
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img src="img/1.jpg" alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div> 
+			    <div class="item">
+			      <img src="img/2.jpg" alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="img/3.jpg" alt="...">
+			      <div class="carousel-caption">
+			        ...
+			      </div>
+			    </div>
+			  </div>
+			
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+			</div>
+			
+			<div class="row">
+				<!--最新商品-->
+				<div>
+					<span class="h2">最新商品</span>
+					<img src="img/title2.jpg"/>
+				</div>
+				
+				<div class="col-md-2 hidden-sm hidden-xs" style="height: 400px;">
+					<img src="img/big01.jpg" height="100%"/>
+				</div>
+				
+				<div class="col-md-6 col-sm-12 hidden-xs"  style="height: 200px;">
+					<img src="img/middle01.jpg" height="100%" />
+				</div>
+				
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg" />
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-6"  style="height: 200px; ">
+					<img src="img/small08.jpg"/>
+					<p ><a href="#">电饭煲</a></p>
+					<p >￥200</a></p>
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>
+
+
+<!--需求:
+	当屏幕为小屏幕的时候和超小屏幕的时候隐藏热门商品中的左边那张图片
+	当屏幕为超小屏幕隐藏middle图片
+技术分析:
+	hidden-xxxx
+步骤分析:
+	1.布局页面
+	2.创建8个div
+	3.第一个:logo
+		3个div 
+		小屏幕 2个一行 
+		超小屏幕一个一行
+	4.第二个div:导航条
+	5.第三个div:轮播图
+	6.第四个div:最新商品
+		先分成左右两个div
+			左边的div 放一张图片 
+				屏幕为小屏幕的时候和超小屏幕的时候 隐藏
+				中等屏幕 占2份
+			右边的div 
+				中等屏幕 占10份
+				屏幕为小屏幕的时候和超小屏幕的时候 占12份
+					middle 
+						中等屏幕 6份
+						小屏幕	12份
+						超小屏幕 隐藏
+					商品:
+						中等屏幕 2份
+						小屏幕 	 4份
+						超小屏幕 12份-->
