@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script>
+			$(function(){
+				$('.carousel').carousel({
+  					interval: 2000
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+			<!--导航条-->
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <a class="navbar-brand" href="#">首页</a>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				        <li class="active"><a href="#">手机 <span class="sr-only">(current)</span></a></li>
+				        <li><a href="#">电脑</a></li>
+				        <li><a href="#">数码配件</a></li>
+				        <li><a href="#">家居百货</a></li>
+				        <li><a href="#">蔬果生鲜</a></li>
+				        <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他 <span class="caret"></span></a>
+				          <ul class="dropdown-menu">
+				            <li><a href="#"></a></li>
+				            <li><a href="#">图书音影</a></li>
+				            <li><a href="#">鞋帽箱包</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">男装</a></li>
+				            <li role="separator" class="divider"></li>
+				            <li><a href="#">女装</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+				      <form class="navbar-form navbar-left pull-right">
+				        <div class="form-group">
+				          <input type="text" class="form-control" placeholder="输入内容">
+				        </div>
+				        <button type="submit" class="btn btn-default">搜索</button>
+				      </form>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+			</div>
+			<div class="row">
+			<!--轮播图-->
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+				    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+				
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="img/1.jpg" alt="...">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div> 
+				    <div class="item">
+				      <img src="img/2.jpg" alt="...">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/3.jpg" alt="...">
+				      <div class="carousel-caption">
+				        ...
+				      </div>
+				    </div>
+				  </div>
+				
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<h2>牢记</h2>
+					<p>在年轻人的颈项上，没有什么东西能比事业心这颗灿烂的宝珠更迷人的了。</p>
+					<a href="#" class="btn-primary pull-right" >more</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<h2>牢记</h2>
+					<p>过放荡不羁的生活，容易得像顺水推舟，但是要结识良朋益友，却难如登天。</p>
+					<a href="#" class="btn-danger pull-right">more</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xs-12">
+					<h2>牢记</h2>
+					<p>世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理。</p>
+					<a href="#" class="btn-warning pull-right">more</a>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
