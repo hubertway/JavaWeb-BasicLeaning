@@ -354,6 +354,7 @@ truncate 清空表 ★
 	和delete from 区别:
 		delete属于DML语句  truncate属于DDL语句
 		delete逐条删除	truncate干掉表,重新创建一张空表
+		-- delete删除后，主键编号还是会延续，truncate删除后，主键也从头开始了。
 		
 auto_increment 自增
 	要求:
