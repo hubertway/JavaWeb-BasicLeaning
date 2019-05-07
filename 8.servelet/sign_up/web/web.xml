@@ -2,11 +2,22 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>3.2sign_up</display-name>
   <servlet>
-  		<servlet-name>LoginServlet</servlet-name>
-  		<servlet-class>web.servlet.LoginServlet</servlet-class>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>web.servlet.LoginServlet</servlet-class>
+    <load-on-startup>2</load-on-startup>
   </servlet>
   <servlet-mapping>
-  		<servlet-name>LoginServlet</servlet-name>
-  		<url-pattern>/login</url-pattern>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowServlet</display-name>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>web.servlet.ShowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowServlet</servlet-name>
+    <url-pattern>/show</url-pattern>
   </servlet-mapping>
 </web-app>
